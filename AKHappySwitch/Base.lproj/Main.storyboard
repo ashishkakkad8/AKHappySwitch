@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nTs-ED-M6f">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--AK Happy Switch-->
+        <scene sceneID="bvb-Q8-f10">
+            <objects>
+                <viewController id="T1O-5T-sTU" customClass="AKHappySwitchVC" customModule="AKHappySwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bxi-Ya-Jpf"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJs-xf-k5n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dQW-Vh-KGm">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIu-Wd-syL">
+                                <rect key="frame" x="250" y="246" width="100" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtR-B3-rdl">
+                                        <rect key="frame" x="4" y="4" width="36" height="36"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cH3-15-Ahr">
+                                                <rect key="frame" x="8" y="10" width="6" height="6"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="6" id="YP4-lc-1eT"/>
+                                                    <constraint firstAttribute="width" constant="6" id="chq-0x-gnY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3r-R6-yVA">
+                                                <rect key="frame" x="12" y="26" width="12" height="2"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="Ezk-Z9-U18"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxY-26-stL">
+                                                <rect key="frame" x="22" y="10" width="6" height="6"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="6" id="PH8-Km-wqv"/>
+                                                    <constraint firstAttribute="height" constant="6" id="VmE-Pb-CeB"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="e3r-R6-yVA" secondAttribute="trailing" constant="12" id="5BL-or-lXl"/>
+                                            <constraint firstItem="cH3-15-Ahr" firstAttribute="leading" secondItem="qtR-B3-rdl" secondAttribute="leading" constant="8" id="7nz-hT-Gof"/>
+                                            <constraint firstItem="cH3-15-Ahr" firstAttribute="top" secondItem="qtR-B3-rdl" secondAttribute="top" constant="10" id="HmY-Tm-9Zf"/>
+                                            <constraint firstAttribute="width" constant="36" id="Hn8-Hz-e84"/>
+                                            <constraint firstAttribute="trailing" secondItem="UxY-26-stL" secondAttribute="trailing" constant="8" id="Rqf-E4-8ZS"/>
+                                            <constraint firstItem="UxY-26-stL" firstAttribute="top" secondItem="qtR-B3-rdl" secondAttribute="top" constant="10" id="hT4-mA-6NQ"/>
+                                            <constraint firstItem="e3r-R6-yVA" firstAttribute="leading" secondItem="qtR-B3-rdl" secondAttribute="leading" constant="12" id="qCA-GT-xwk"/>
+                                            <constraint firstAttribute="bottom" secondItem="e3r-R6-yVA" secondAttribute="bottom" constant="8" id="tsV-x6-YRv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qtR-B3-rdl" firstAttribute="top" secondItem="EIu-Wd-syL" secondAttribute="top" constant="4" id="1Yo-9X-hg7"/>
+                                    <constraint firstItem="qtR-B3-rdl" firstAttribute="leading" secondItem="EIu-Wd-syL" secondAttribute="leading" constant="4" id="Db9-Hi-Th4"/>
+                                    <constraint firstAttribute="width" constant="100" id="SFU-BP-Aa2"/>
+                                    <constraint firstAttribute="bottom" secondItem="qtR-B3-rdl" secondAttribute="bottom" constant="4" id="YaE-p5-wOu"/>
+                                    <constraint firstAttribute="height" constant="44" id="sxT-9a-rIl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWG-Yg-JTd">
+                                <rect key="frame" x="8" y="246" width="234" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1BH-3y-ldS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Sad">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSadPressed:" destination="T1O-5T-sTU" eventType="touchUpInside" id="IN1-gB-LlE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojn-bw-mle">
+                                <rect key="frame" x="358" y="246" width="234" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="UZr-Py-n7u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Happy">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHappyPressed:" destination="T1O-5T-sTU" eventType="touchUpInside" id="DQg-ya-qGv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EIu-Wd-syL" firstAttribute="centerX" secondItem="dQW-Vh-KGm" secondAttribute="centerX" id="0Ce-DD-5xF"/>
+                            <constraint firstItem="ojn-bw-mle" firstAttribute="centerY" secondItem="dQW-Vh-KGm" secondAttribute="centerY" id="8lI-oK-pkZ"/>
+                            <constraint firstItem="ZWG-Yg-JTd" firstAttribute="leading" secondItem="dQW-Vh-KGm" secondAttribute="leading" constant="8" id="Cae-N2-Z7E"/>
+                            <constraint firstItem="EIu-Wd-syL" firstAttribute="centerY" secondItem="dQW-Vh-KGm" secondAttribute="centerY" id="IzK-BS-0U6"/>
+                            <constraint firstAttribute="trailing" secondItem="ojn-bw-mle" secondAttribute="trailing" constant="8" id="OFQ-zI-ffp"/>
+                            <constraint firstItem="ZWG-Yg-JTd" firstAttribute="centerY" secondItem="dQW-Vh-KGm" secondAttribute="centerY" id="Wqh-yd-c5v"/>
+                            <constraint firstItem="ojn-bw-mle" firstAttribute="leading" secondItem="EIu-Wd-syL" secondAttribute="trailing" constant="8" id="hja-rU-zIq"/>
+                            <constraint firstItem="EIu-Wd-syL" firstAttribute="leading" secondItem="ZWG-Yg-JTd" secondAttribute="trailing" constant="8" id="pzl-BF-Mxq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AK Happy Switch" id="Iig-62-2mb"/>
+                    <connections>
+                        <outlet property="btnHappy" destination="ojn-bw-mle" id="WuI-w0-q2J"/>
+                        <outlet property="btnSad" destination="ZWG-Yg-JTd" id="307-ox-3Td"/>
+                        <outlet property="cnstSmileLeading" destination="qCA-GT-xwk" id="CCs-zc-NrV"/>
+                        <outlet property="cnstSmileTrailing" destination="5BL-or-lXl" id="YL3-vZ-htM"/>
+                        <outlet property="cnstSwitchButtonLeading" destination="Db9-Hi-Th4" id="vvH-4N-IJ4"/>
+                        <outlet property="viewFace" destination="qtR-B3-rdl" id="Saq-iq-SLf"/>
+                        <outlet property="viewLeftEye" destination="cH3-15-Ahr" id="zr0-dl-Buy"/>
+                        <outlet property="viewRightEye" destination="UxY-26-stL" id="ifE-Xw-O8Y"/>
+                        <outlet property="viewSmile" destination="e3r-R6-yVA" id="6oJ-SP-JPg"/>
+                        <outlet property="viewSwitch" destination="EIu-Wd-syL" id="dgV-Pg-Saj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MRY-Fv-EQX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="-237"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SIu-Rm-oUa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nTs-ED-M6f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="z6B-xb-G0z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T1O-5T-sTU" kind="relationship" relationship="rootViewController" id="oQY-Rf-gcf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XyW-n5-CuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="-237"/>
+        </scene>
+    </scenes>
+</document>
