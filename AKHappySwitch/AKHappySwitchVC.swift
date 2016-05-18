@@ -18,7 +18,8 @@ class AKHappySwitchVC: UIViewController {
     
     @IBOutlet var viewSwitch: UIView!
     @IBOutlet var viewFace: UIView!
-    @IBOutlet var viewSmile: UIView!
+    @IBOutlet var viewSadSmile: UIView!
+    @IBOutlet var viewHappySmile: ArcView!
     @IBOutlet var viewLeftEye: UIView!
     @IBOutlet var viewRightEye: UIView!
     
@@ -38,7 +39,7 @@ class AKHappySwitchVC: UIViewController {
         setCornerRadius(viewFace, pixels: viewFace.frame.size.height/2)
         setCornerRadius(viewLeftEye, pixels: viewLeftEye.frame.size.height/2)
         setCornerRadius(viewRightEye, pixels: viewRightEye.frame.size.height/2)
-        setCornerRadius(viewSmile, pixels: viewSmile.frame.size.height/2)
+        setCornerRadius(viewSadSmile, pixels: viewSadSmile.frame.size.height/2)
         
         //Timer For Blinking Eyes
         
@@ -84,8 +85,8 @@ class AKHappySwitchVC: UIViewController {
         self.cnstSmileLeading.constant = 8
         self.cnstSmileTrailing.constant = 8
         self.cnstSwitchButtonLeading.constant = self.viewSwitch.frame.size.width-self.viewFace.frame.size.width-4;
-        self.beHappy(true)
         UIView.animateWithDuration(0.5) {
+            self.beHappy(true)
             self.changeColor(UIColor.purpleColor())
             self.view.layoutIfNeeded()
         }
@@ -95,8 +96,8 @@ class AKHappySwitchVC: UIViewController {
         self.cnstSwitchButtonLeading.constant = 4
         self.cnstSmileLeading.constant = 12
         self.cnstSmileTrailing.constant = 12
-        self.beHappy(false)
         UIView.animateWithDuration(0.5) {
+            self.beHappy(false)
             self.changeColor(UIColor.lightGrayColor())
             self.view.layoutIfNeeded()
         }
@@ -106,10 +107,14 @@ class AKHappySwitchVC: UIViewController {
         self.viewSwitch.backgroundColor = color
         self.viewLeftEye.backgroundColor = color
         self.viewRightEye.backgroundColor = color
-        self.viewSmile.backgroundColor = color
+        self.viewSadSmile.backgroundColor = color
+        self.viewHappySmile.color = color
+        self.viewHappySmile.setNeedsDisplay()
     }
     
     func beHappy(isHappy:Bool) {
+        self.viewSadSmile.hidden = isHappy
+        self.viewHappySmile.hidden = !isHappy
         self.btnSad.selected = !isHappy
         self.btnHappy.selected = isHappy
         self.isHappy = isHappy

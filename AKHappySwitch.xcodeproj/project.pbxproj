@@ -13,6 +13,7 @@
 		C6AC03221CEB215C0052D475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AC03211CEB215C0052D475 /* Assets.xcassets */; };
 		C6AC03251CEB215C0052D475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC03231CEB215C0052D475 /* LaunchScreen.storyboard */; };
 		C6AC032E1CEB26950052D475 /* AKHappySwitchSceenshot.gif in Resources */ = {isa = PBXBuildFile; fileRef = C6AC032D1CEB26950052D475 /* AKHappySwitchSceenshot.gif */; };
+		C6E7908F1CEC2B5200AC3390 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E7908E1CEC2B5200AC3390 /* ArcView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C6AC03241CEB215C0052D475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6AC03261CEB215C0052D475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6AC032D1CEB26950052D475 /* AKHappySwitchSceenshot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AKHappySwitchSceenshot.gif; sourceTree = "<group>"; };
+		C6E7908E1CEC2B5200AC3390 /* ArcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				C6AC031A1CEB215C0052D475 /* AppDelegate.swift */,
 				C6AC031C1CEB215C0052D475 /* AKHappySwitchVC.swift */,
+				C6E7908E1CEC2B5200AC3390 /* ArcView.swift */,
 				C6AC031E1CEB215C0052D475 /* Main.storyboard */,
 				C6AC03211CEB215C0052D475 /* Assets.xcassets */,
 				C6AC03231CEB215C0052D475 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E7908F1CEC2B5200AC3390 /* ArcView.swift in Sources */,
 				C6AC031D1CEB215C0052D475 /* AKHappySwitchVC.swift in Sources */,
 				C6AC031B1CEB215C0052D475 /* AppDelegate.swift in Sources */,
 			);
